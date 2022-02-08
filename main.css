@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background: #F7ECDE;
+    overflow: hidden;
+}
+
+.navFlexBox {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 7vh;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+.navBar a {
+    margin-right: 40px;
+    padding: 0px;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.navBar a:hover {
+    color: #91E6EB;
+}
+
+.greetingFlexBox, .questionFlexBox {
+    display: flex;
+    justify-content: center;
+    height: 9vh;
+    width: 100vw;
+    margin-top: 200px;
+}
+
+.codeFlexBox {
+    display: flex;
+    justify-content: center;
+    height: 7.5vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.codeFlexBox input {
+    margin: 0px 5px 0px 5px;
+    height: 40px;
+    width: 30px;
+    text-align: center;
+    font-weight: 450;
+    font-size: 1.1em;
+    text-transform: capitalize;
+    outline-width: 0;
+    border: none;
+    border-bottom: 1px solid #000000;
+    background-color: #F7ECDE;
+}
+
+.submitFlexBox {
+    display: flex;
+    justify-content: center;
+    height: 76.5vh;
+    width: 100vw;
+}
+
+#submitButton {
+    margin: 0px 5px 0px 5px;
+    height: 40px;
+    width: 230px;
+    background-color: #FF613F;
+    border-radius: 25px;
+    border: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+#submitButton:hover {
+    cursor: pointer;
+}
+
+#submitButton:active {
+    background: #5E0C07;
+    -webkit-box-shadow: inset 0px 0px 5px #C1C1C1;
+    -moz-box-shadow: inset 0px 0px 5px #C1C1C1;
+    box-shadow: inset 0px 0px 5px #C1C1C1;
+    outline: none;
+}
+
+.answerFlexBox {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+}
+
+.answerFlexBox button {
+    height: 13vh;
+    width: 8vw;
+    margin: 60px 20px 20px 20px;
+    background: #F2E3CB;
+    border: none;
+    outline: none;
+    border-radius: 25%;
+    box-shadow: 0 9px #999;
+}
+
+.answerFlexBox img {
+    border: 0;
+    background: transparent;
+    height: 70%;
+    width: 70%;
+}
+
+.answerFlexBox button:active {
+    background-color: #bfb099;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.submitAnswersFlexBox {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+}
+
+.submitAnswersFlexBox button {
+    height: 35%;
+    width: 40%;
+    background-color: #FF613F;
+    border: none;
+    outline: none;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.submitAnswersFlexBox button:active {
+        background-color:#5E0C07;
+        transform: translateY(4px);
+}
