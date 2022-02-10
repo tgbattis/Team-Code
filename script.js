@@ -99,3 +99,27 @@ function surveyQuestions() {
     document.getElementById('questionID').innerHTML = greetingQuestion;
     currentQuestion = greetingQuestion;
 }
+
+function TestButtonHandler() {
+    var parameters = '{"data":"clickSucessfull"}'
+
+    //jQuery ajax method
+    $.ajax({
+        type: "POST",
+        url: "/testConnection",
+        data: parameters,
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (msg) {
+            // Receive JSON Object back form server
+            console.log(msg)
+            // Parse Json
+            let status = msg['status']
+            // Display
+            alert(status);
+        },
+        error: function (e) {
+            alert("this code will only execute if javascript is unable to access the webservice");
+        }
+    });
+}
