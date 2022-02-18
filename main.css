@@ -143,3 +143,139 @@ body {
         background-color:#5E0C07;
         transform: translateY(4px);
 }
+
+.topPageSpacing {
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+    width: 100vw;
+}
+
+.centeredPaging {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    width: 100vw;
+}
+
+.leftPageSpacing {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 44%;
+}
+
+.getLoginCode {
+    display: flex;
+    align-content: flex-start;
+    flex-flow: wrap;
+    height: 100%;
+    width: 12%;
+    background-color: #F5EEDA;
+    padding: 10px 5px 10px 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 3px 3px #3D3D3C;
+}
+
+.rightPageSpacing {
+    display: flex;
+    height: 100%;
+    width: 44%;
+}
+
+#idPlaceholder {
+    margin: 2.5px 0px 0px 0px;
+    padding: 0px 0px 0px 15px;
+    font-size: 0.8em;
+    height: 13%;
+    width: 100%;
+    flex-basis: 100%;
+}
+
+#empIdInput {
+    height: 17%;
+    width: 100%;
+    margin: 0px 5px 0px 5px;
+    padding-top: 0px;
+}
+
+#submitEmployeeID {
+    height: 20%;
+    width: 90%;
+    margin: 15px 5px 5px 9px;
+    background-color: #FF613F;
+}
+
+#codeOutput {
+    height: 18%;
+    width: 90%;
+    margin: 15px 5px 5px 9px;
+    font-family: monospace;
+}
+
+.successImage {
+    display: flex;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.thankYouText {
+    display: flex;
+    justify-content: center;
+}
+
+.submissionSentText {
+    display: flex;
+    justify-content: center;
+}
+
+.graphLabels {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+.graphLabels p {
+    width: 20%;
+    padding-left: 90px;
+}
+
+.graphContainer {
+    width: 100%;
+    height: 55%;
+}
+
+.graphContainer canvas {
+    justify-content: center;
+    float: right;
+    height: 17%;
+    width: 17%;
+    margin-right: 35px;
+    white-space: nowrap;
+}
+
+.overviewDesc {
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content: center;
+}
+
+.overviewDesc p {
+    font-size: 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.chartLegend {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.chartLegend img {
+    height: 30%;
+    width: 20%;
+}
