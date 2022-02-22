@@ -1,7 +1,7 @@
 /* 
 /* Tiana Battistessa, Mikane Faraoni, Mark Hibbing, Omar Juarez Mendoza, Matthew Le*/
 /* This creates the database*/
-/* THE MAIN THING TO BE DISCUSSED IS HOW MANY QUESTIONS PER CATEGORY. IT IS MY UNDERSTANDING WE WANT GIVE CATEGORIES SO I MADE FIVE OF EACH AND THE QUESTION VARIABLES CAN BE CHANGED*/
+/*  potential language change will be discussed*/
 CREATE DATABASE surveyData;
 
 /*This gives us a table to use for our first category*/
@@ -11,54 +11,23 @@ Question1 varchar(200),
 Question2 varchar(200),
 Question3 varchar(200),
 Question4 varchar(200),
-Question5 varchar(200)
-);
-
-/* This is what would actually get survey answers into the table.. VALUES just has '' as placeholders but the answer would go in there*/
-INSERT INTO Survey (Question1, Question2, Question3,  Question4, Question5)
-VALUES ('','','','', '');
-
-CREATE TABLE SurveyCategory2
-(
+Question5 varchar(200),
 Question6 varchar(200),
-);
-
-/* This is what would actually get survey answers into the table.. VALUES just has '' as placeholders but the answer would go in there*/
-INSERT INTO Survey (Question6)
-VALUES ('');
-
-CREATE TABLE SurveyCategory3
-(
 Question7 varchar(200),
-);
-
-/* This is what would actually get survey answers into the table.. VALUES just has '' as placeholders but the answer would go in there*/
-INSERT INTO Survey (Question7)
-VALUES ('');
-
-CREATE TABLE SurveyCategory4
-(
 Question8 varchar(200),
-);
-
-/* This is what would actually get survey answers into the table.. VALUES just has '' as placeholders but the answer would go in there*/
-INSERT INTO Survey (Question8)
-VALUES ('');
-
-CREATE TABLE SurveyCategory5
-(
 Question9 varchar(200),
 Question10 varchar(200),
 Question11 varchar(200),
 Question12 varchar(200),
 Question13 varchar(200),
 Question14 varchar(200),
-Question15 varchar(200),
+Question15 varchar(200)
 );
 
 /* This is what would actually get survey answers into the table.. VALUES just has '' as placeholders but the answer would go in there*/
-INSERT INTO Survey (Question9, Question10, Question11, Question12, Question13, Question14, Question15)
-VALUES ('', '', '', '', '', '', '');
+INSERT INTO Survey (Question1, Question2, Question3,  Question4, Question5, Question6, Question7, Question8, Question9, Question10, Question11, Question12, Question13, Question14, Question15)
+VALUES ('','','','', '', '', '', '', '', '', '', '', '', '', '');
+
 
 
 */

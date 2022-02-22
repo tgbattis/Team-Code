@@ -10,7 +10,7 @@
 
     <div class="navFlexBox">
         <nav class="navBar">
-            <a href="#">Sign Out</a>
+            <a href="login.html">Sign Out</a>
         </nav>
     </div>
 
@@ -19,15 +19,15 @@
     </div>
 
     <div class="answerFlexBox">
-        <button type="submit" class="surveyAnswerButtons" id="madFace" value="-2" onclick="nextQuestion()"><img src="../images/madface.png"></button>
-        <button type="submit" class="surveyAnswerButtons" id="sadFace" value="-1" onclick="nextQuestion()"><img src="../images/sadface.png"></button>
-        <button type="submit" class="surveyAnswerButtons" id="contentFace" value="0" onclick="nextQuestion()"><img src="../images/contentface.png"></button>
-        <button type="submit" class="surveyAnswerButtons" id="joyfulFace" value="1" onclick="nextQuestion()"><img src="../images/joyfulface.png"></button>
-        <button type="submit" class="surveyAnswerButtons" id="happyFace" value="2" onclick="nextQuestion()"><img src="../images/happyface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="madFace" value="-2" onclick="nextQuestion(-2)"><img src="../images/madface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="sadFace" value="-1" onclick="nextQuestion(-1)"><img src="../images/sadface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="contentFace" value="0" onclick="nextQuestion(0)"><img src="../images/contentface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="joyfulFace" value="1" onclick="nextQuestion(1)"><img src="../images/joyfulface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="happyFace" value="2" onclick="nextQuestion(2)"><img src="../images/happyface.png"></button>
     </div>
 
     <div class="submitAnswersFlexBox">
-        <button type="submit" id="submitAnswers">SUBMIT &rarr;</button>
+        <button type="submit" id="submitAnswers" onclick="submitAnswers()">SUBMIT &rarr;</button>
     </div>
 
     <script src="../script.js"></script>
