@@ -1,13 +1,22 @@
-const greeting = ['greeting placeholder 1', 'greeting placeholder 2', 'greeting placeholder 3', 'greeting placeholder 4', 
-                  'greeting placeholder 5'];
-const workLifeBalance = ['workLifeBalance placeholder 1', 'workLifeBalance placeholder 2', 'workLifeBalance placeholder 3', 
-                         'workLifeBalance placeholder 4', 'workLifeBalance placeholder 5'];
-const howsWork = ['howsWork placeholder 1', 'howsWork placeholder 2', 'howsWork placeholder 3', 'howsWork placeholder 4', 
-                  'howsWork placeholder 5'];
-const coworkers = ['coworkers placeholder 1', 'coworkers placeholder 2', 'coworkers placeholder 3', 'coworkers placeholder 4',
-                   'coworkers placeholder 5'];
-const unknown = ['unknown placeholder 1', 'unknown placeholder 2', 'unknown placeholder 3', 'unknown placeholder 4', 
-                 'unknown placeholder 5'];
+const greeting = ['It can be hard getting up in the morning! How did you feel on your way to work this morning?',
+                  'Research shows that our work life can influence our stress levels. How would you rate your stress level today?',
+                  'Everyone needs some time to have fun! What description best explains your social/recreational life outside of work?'];
+
+const workLifeBalance = ['It comes as no surprise that work can be on our mind often. When you think about your job right now how do you feel?',
+                         'Nothing feels better than getting to come back home at the end of the day! How do you feel most days when you leave work at the end of the day?',
+                         'Your coworkers can be like a second family. What word best describes how you feel about your relationship with your coworkers?'];
+
+const howsWork = ['As humans we all need to be heard! Would you say that you feel heard in your current role right now?',
+                  'We all have feelings! How do you feel right here, right now, in this moment?',
+                  'As humans we all want to grow, how do you feel about the growth opportunities your company provides for you?'];
+
+const coworkers = ['We all desire to reach our fullest potential. Do you feel like your current role utilizes all your potential? Or is helping you grow into your fullest potential?',
+                   'As humans our minds need to be engaged/entertained! Do you feel like your current role engages and stimulates your mind?',
+                   'In order to do our job we need to be given the essential information and training. Do you feel like you\'92re provided with the training and information you need to do your job to the best of your ability?'];
+
+const unknown = ["You're doing a great job! Do you feel like your hard work is recognized when you contribute to the company's success?",
+                 'Life happens! Do you feel like your job gives you the needed flexibility to meet the needs of your personal life?',
+                 "At the end of the day, we're all people. Do you feel like your boss/ company cares about you as a person?"];
 
 let surveyAnswers = [["Greeting", ""], ["Work Life Balance", ""], ["How's Work", ""], ["How's Your CoWorkers", ""], ["Unknown", ""]];
 
