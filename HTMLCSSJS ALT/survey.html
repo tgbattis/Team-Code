@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../main.css">-->
+    <link rel="stylesheet" href="main.css">
+    <title>Survey</title>
+</head>
+<body onload="surveyQuestions()">
+
+    <div class="navFlexBox">
+        <nav class="navBar">
+            <a href="login.html">Sign Out</a>
+        </nav>
+    </div>
+
+    <div class="questionFlexBox">
+        <h2 id="questionID"></h2>
+    </div>
+
+    <div class="answerFlexBox">
+        <button type="submit" class="surveyAnswerButtons" id="madFace" value="-2" onclick="nextQuestion(-2)"><img src="madface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="sadFace" value="-1" onclick="nextQuestion(-1)"><img src="sadface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="contentFace" value="0" onclick="nextQuestion(0)"><img src="contentface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="joyfulFace" value="1" onclick="nextQuestion(1)"><img src="joyfulface.png"></button>
+        <button type="submit" class="surveyAnswerButtons" id="happyFace" value="2" onclick="nextQuestion(2)"><img src="happyface.png"></button>
+    </div>
+
+    <div class="submitAnswersFlexBox">
+        <button type="submit" id="submitAnswers" onclick="submitAnswers()">SUBMIT &rarr;</button>
+    </div>
+
+    <!-- <script src="../script.js"></script>-->
+    <script src="script.js"></script>
+    
+</body>
+</html>

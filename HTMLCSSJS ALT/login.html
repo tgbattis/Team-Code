@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="../main.css">-->
+    <link rel="stylesheet" href="main.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="navFlexBox">
+        <nav class="navBar">
+            <a href="create.html">Get Code</a>
+        </nav>
+    </div>
+
+    <div class="greetingFlexBox">
+        <h2 id="loginGreeting">Hello!</h2>
+    </div>
+
+    <div class="codeFlexBox">
+        <form name="codeEntryForm">
+        <input type="text" id="codeOne" size="1" min="1" maxlength="1" onkeyup="autoTab('codeOne', 1, 'codeTwo')"> 
+        <input type="text" id="codeTwo" size="1" min="1" maxlength="1" onkeyup="autoTab('codeTwo', 1, 'codeThree')">
+        <input type="text" id="codeThree" size="1" min="1" maxlength="1" onkeyup="autoTab('codeThree', 1, 'codeFour')">
+        <input type="text" id="codeFour" size="1" min="1" maxlength="1" onkeyup="autoTab('codeFour', 1, 'codeFive')">
+        <input type="text" id="codeFive" size="1" min="1" maxlength="1" onkeyup="autoTab('codeFive', 1, 'codeSix')">
+        <input type="text" id="codeSix" size="1" min="1" maxlength="1" onkeyup="submitAppear()">
+        </form>
+    </div>
+
+    <div class="submitFlexBox">
+        <button type="submit" id="submitButton" onclick="loginSubmit()">LOGIN &rarr;</button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
