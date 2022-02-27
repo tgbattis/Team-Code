@@ -171,7 +171,7 @@ function submitAnswers() {
     fifthAnswer = currentAnswer;
     surveyAnswers = [[firstSurveyQuestion, firstAnswer], [secondSurveyQuestion, secondAnswer], [thirdSurveyQuestion, thirdAnswer], 
                      [fourthSurveyQuestion, fourthAnswer], [fifthSurveyQuestion, fifthAnswer]];
-    window.location = "./submission.html";
+    //window.location = "./submission.html";
     console.log(surveyAnswers);
 }
 
