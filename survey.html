@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Survey</title>
+</head>
+<body onload="surveyQuestions()">
+
+    <div class="navFlexBox">
+        <nav class="navBar">
+            <a href="login.html">Sign Out</a>
+        </nav>
+    </div>
+
+    <div class="questionFlexBox">
+        <h3 id="questionID">hi</h3>
+    </div>
+
+    <div class="radioToolbar">
+        <input type="radio" class="surveyAnswerButtons" name="answer" id="madFace" value="-2" onclick="getButtonValue(-2)">
+        <label for="madFace">
+            <span><img src="./images/madface.png"></span>
+        </label>
+
+        <input type="radio" class="surveyAnswerButtons" name="answer" id="sadFace" value="-1" onclick="getButtonValue(-1)">
+        <label for="sadFace">
+            <span><img src="./images/sadface.png"></span>
+        </label>
+
+        <input type="radio" class="surveyAnswerButtons" name="answer" id="contentFace" value="0" onclick="getButtonValue(0)">
+        <label for="contentFace">
+            <span><img src="./images/contentface.png"></span>
+        </label>
+
+        <input type="radio" class="surveyAnswerButtons" name="answer" id="joyfulFace" value="1" onclick="getButtonValue(1)">
+        <label for="joyfulFace">
+            <span><img src="./images/joyfulface.png"></span>
+        </label>
+
+        <input type="radio" class="surveyAnswerButtons" name="answer" id="happyFace" value="2" onclick="getButtonValue(2)">
+        <label for="happyFace">
+            <span><img src="./images/happyface.png"></span>
+        </label>
+
+    </div>
+
+    <div class="submitAnswersFlexBox">
+        <button id="previousQuestion" onclick="previousQuestion()">PREVIOUS QUESTION</button>
+        <button id="submitAnswers" onclick="nextQuestion()">NEXT QUESTION &rarr;</button>
+    </div>
+
+    <script src="./script.js"></script>
+    
+</body>
+</html>

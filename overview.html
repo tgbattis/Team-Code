@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+</head>
+<body onload="overviewPage()">
+
+    <div class="navFlexBox">
+        <nav class="navBar">
+            <a href="./login.html">Sign Out</a>
+        </nav>
+    </div>
+
+    <div class="overviewDesc">
+        <p>OVERVIEW</p>
+    </div>
+
+    <div class="graphLabels">
+        <p id="chartDescOne"></p>
+        <p id="chartDescTwo"></p>
+        <p id="chartDescThree"></p>
+        <p id="chartDescFour"></p>
+        <p id="chartDescFive"></p>
+    </div>
+
+    <div class="graphContainer">
+        <canvas id="chartFive"></canvas>
+        <canvas id="chartFour"></canvas>
+        <canvas id="chartThree"></canvas>
+        <canvas id="chartTwo"></canvas>
+        <canvas id="chartOne"></canvas>
+    </div>
+
+    <div class="chartLegend">
+        <img src="./images/chartLegend.png" alt="">
+    </div>
+
+    <div class="pageNavButtons">
+        <button id="previousCharts" onclick="previousChartPage()">&larr;</button>
+        <button id="nextCharts" onclick="nextChartPage()">&rarr;</button>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

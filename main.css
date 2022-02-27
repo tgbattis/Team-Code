@@ -12,8 +12,8 @@ body {
 .navFlexBox {
     display: flex;
     flex-flow: row nowrap;
-    width: 100vw;
-    height: 7vh;
+    width: 100%;
+    height: 7%;
     margin-top: 20px;
     justify-content: flex-end;
 }
@@ -31,12 +31,20 @@ body {
     color: #91E6EB;
 }
 
-.greetingFlexBox, .questionFlexBox {
+.greetingFlexBox {
     display: flex;
     justify-content: center;
     height: 9vh;
     width: 100vw;
     margin-top: 200px;
+}
+
+.questionFlexBox {
+    display: flex;
+    justify-content: center;
+    height: 9vh;
+    width: 100vw;
+    margin-top: 10%;
 }
 
 .codeFlexBox {
@@ -91,35 +99,42 @@ body {
     outline: none;
 }
 
-.answerFlexBox {
+.radioToolbar {
     display: flex;
     justify-content: center;
     height: 30vh;
     width: 100vw;
 }
 
-.answerFlexBox button {
-    height: 13vh;
-    width: 8vw;
-    margin: 60px 20px 20px 20px;
-    background: #F2E3CB;
-    border: none;
-    outline: none;
+.radioToolbar input[type='radio'] {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+}
+
+.radioToolbar label {
+    display: flex;
+    justify-content: center;
+    background-color: #F2E3CB;
+    margin: 2.2%;
+    width: 12%;
+    height: 75%;
     border-radius: 25%;
     box-shadow: 0 9px #999;
 }
 
-.answerFlexBox img {
-    border: 0;
-    background: transparent;
-    height: 70%;
-    width: 70%;
+.radioToolbar label img {
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    height: 65%;
+    margin-left: 5%;
+    margin-top: 20%;
 }
 
-.answerFlexBox button:active {
-    background-color: #bfb099;
+.radioToolbar input[type='radio']:checked + label {
+    background-color: #BFB099;
     box-shadow: 0 5px #666;
-    transform: translateY(4px);
 }
 
 .submitAnswersFlexBox {
@@ -130,13 +145,14 @@ body {
 }
 
 .submitAnswersFlexBox button {
+    margin-top: 3%;
+    margin-left: 2px;
+    margin-right: 2px;
     height: 35%;
-    width: 40%;
+    width: 30%;
     background-color: #FF613F;
     border: none;
     outline: none;
-    visibility: hidden;
-    opacity: 0;
 }
 
 .submitAnswersFlexBox button:active {
@@ -236,24 +252,33 @@ body {
     display: flex;
     justify-content: center;
     margin-top: 0%;
+    padding: 0%;
 }
 
 .graphLabels p {
     width: 20%;
     padding-left: 90px;
+    font-size: 0.1%;
+    margin-left: 1%;
+    margin-right: 0.5%;
+    padding-bottom: 30px;
+    padding-left: 0%;
+    padding-right: 0%;
+    overflow: hidden;
 }
 
 .graphContainer {
     width: 100%;
-    height: 55%;
+    height: 35%;
 }
 
 .graphContainer canvas {
     justify-content: center;
+    flex-direction: row-reverse;
     float: right;
     height: 17%;
     width: 17%;
-    margin-right: 35px;
+    margin: 21px;
     white-space: nowrap;
 }
 
@@ -278,4 +303,26 @@ body {
 .chartLegend img {
     height: 30%;
     width: 20%;
+}
+
+.pageNavButtons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 70px;
+}
+
+.pageNavButtons button {
+    margin: 1%;
+    height: 50%;
+    width: 6%;
+    background-color: #F2E3CB;
+    border-radius: 15%;
+    box-shadow: 0 9px #999;
+    border: none;
+}
+
+.pageNavButtons button:active {
+    background-color: #BFB099;
+    box-shadow: 0 5px #666;
 }
