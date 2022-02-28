@@ -1,3 +1,4 @@
+/*
 const questionOne = "It can be hard getting up in the morning! How did you feel on your way to work this morning?";
 const questionTwo = "Research shows that our work life can influence our stress levels. How would you rate your stress level today?";
 const questionThree = "Everyone needs some time to have fun! What description best explains your social/recreational life outside of work?";
@@ -13,6 +14,7 @@ const questionTwelve = "In order to do our job we need to be given the essential
 const questionThirteen = "You're doing a great job! Do you feel like your hard work is recognized when you contribute to the company's success?";
 const questionFourteen = "Life happens! Do you feel like your job gives you the needed flexibility to meet the needs of your personal life?";
 const questionFifteen = "At the end of the day, we're all people. Do you feel like your boss/company cares about you as a person?";
+*/
 
 const firstChart = document.getElementById('chartOne').getContext('2d');
 const secondChart = document.getElementById('chartTwo').getContext('2d');
@@ -42,26 +44,26 @@ let quesThirteenChart;
 let quesFourteenChart;
 let quesFifteenChart;
 
-let currentPage;
-let previousPage;
-let currentQuestion;
-let nextAnswer;
+// let currentPage;
+// let previousPage;
+// let currentQuestion;
+// let nextAnswer;
 
-let fakeData = [98, 398, 324, 54, 874];
-let fakeDataTwo = [234, 23, 98, 367, 204];
-let fakeDataThree = [356, 67, 134, 223, 93];
-let fakeDataFour = [23, 201, 233, 393, 178];
-let fakeDataFive = [239, 33, 23, 98, 374];
-let fakeDataSix = [349, 32, 123, 98, 293];
-let fakeDataSeven = [94, 24, 238, 189, 83];
-let fakeDataEight = [394, 193, 38, 87, 234];
-let fakeDataNine = [98, 83, 442, 139, 132];
-let fakeDataTen = [249, 234, 183, 23, 234];
-let fakeDataEleven = [373, 231, 124, 94, 388];
-let fakeDataTwelve= [134, 223, 198, 67, 104];
-let fakeDataThirteen = [56, 167, 34, 323, 193];
-let fakeDataFourteen = [223, 101, 33, 93, 128];
-let fakeDataFifteen = [139, 233, 323, 198, 174];
+let fakeData = questions[questionOne]; // 
+let fakeDataTwo = questions[questionTwo];
+let fakeDataThree = questions[questionThree];
+let fakeDataFour = questions[questionFour];
+let fakeDataFive = questions[questionFive];
+let fakeDataSix = questions[questionSix];
+let fakeDataSeven = questions[questionSeven];
+let fakeDataEight = questions[questionEight];
+let fakeDataNine = questions[questionNine];
+let fakeDataTen = questions[questionTen];
+let fakeDataEleven = questions[questionEleven];
+let fakeDataTwelve= questions[questionTwelve];
+let fakeDataThirteen = questions[questionThirteen];
+let fakeDataFourteen = questions[questionFourteen];
+let fakeDataFifteen = questions[questionFifteen];
 
 function overviewPage() {
     currentPage = 1;
@@ -113,7 +115,7 @@ function overviewPage() {
                 labels: ['Mad', 'Sad', 'Content', 'Joyful', 'Happy'],
                 datasets: [{
                     label: 'Amount',
-                    data: [234, 23, 98, 367, 204],
+                    data: fakeDataTwo,
                     backgroundColor: [
                         '#FF0000', '#FB9494', '#FFFFFF', '#73C6FF', '#0073C2'
                     ]
@@ -135,7 +137,7 @@ function overviewPage() {
                 labels: ['Mad', 'Sad', 'Content', 'Joyful', 'Happy'],
                 datasets: [{
                     label: 'Amount',
-                    data: [356, 67, 134, 223, 93],
+                    data: fakeDataThree,
                     backgroundColor: [
                         '#FF0000', '#FB9494', '#FFFFFF', '#73C6FF', '#0073C2'
                     ]
@@ -157,7 +159,7 @@ function overviewPage() {
                 labels: ['Mad', 'Sad', 'Content', 'Joyful', 'Happy'],
                 datasets: [{
                     label: 'Amount',
-                    data: [23, 201, 233, 393, 178],
+                    data: fakeDataFour,
                     backgroundColor: [
                         '#FF0000', '#FB9494', '#FFFFFF', '#73C6FF', '#0073C2'
                     ]
@@ -179,7 +181,7 @@ function overviewPage() {
                 labels: ['Mad', 'Sad', 'Content', 'Joyful', 'Happy'],
                 datasets: [{
                     label: 'Amount',
-                    data: [239, 33, 23, 98, 374],
+                    data: fakeDataFive,
                     backgroundColor: [
                         '#FF0000', '#FB9494', '#FFFFFF', '#73C6FF', '#0073C2'
                     ]

@@ -167,12 +167,42 @@ function previousQuestion() {
     }
 }
 
+// Storage for submitAnswers
+var questions = {
+    [questionOne] : [0, 0, 0, 0, 0],    // [mad, sad, content, joyful, happy]
+    [questionTwo] : [0, 0, 0, 0, 0],
+    [questionThree] : [0, 0, 0, 0, 0],
+    [questionFour] : [0, 0, 0, 0, 0],
+    [questionFive] : [0, 0, 0, 0, 0],
+    [questionSix] : [0, 0, 0, 0, 0],
+    [questionSeven] : [0, 0, 0, 0, 0],
+    [questionEight] : [0, 0, 0, 0, 0],
+    [questionNine] : [0, 0, 0, 0, 0],
+    [questionTen] : [0, 0, 0, 0, 0],
+    [questionEleven] : [0, 0, 0, 0, 0],
+    [questionTwelve] : [0, 0, 0, 0, 0],
+    [questionThirteen] : [0, 0, 0, 0, 0],
+    [questionFourteen] : [0, 0, 0, 0, 0],
+    [questionFifteen] : [0, 0, 0, 0, 0],
+};
+
+// Grabs user input data and stores the input data in an array
+
 function submitAnswers() {
     fifthAnswer = currentAnswer;
     surveyAnswers = [[firstSurveyQuestion, firstAnswer], [secondSurveyQuestion, secondAnswer], [thirdSurveyQuestion, thirdAnswer], 
                      [fourthSurveyQuestion, fourthAnswer], [fifthSurveyQuestion, fifthAnswer]];
     //window.location = "./submission.html";
     console.log(surveyAnswers);
+    // New Addition
+    for (var i = 0; i < surveyAnswers.length; i++){
+        let question = surveyAnswers[i][0];
+        let answer = surveyAnswers[i][1];
+        console.log(answer);
+        console.log(typeof answer);
+        questions[question][answer]++;  // increments answer value by 1 
+        // Change increment values to all be 1
+    }    
 }
 
 function unCheckAll(value) {
