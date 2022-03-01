@@ -73,13 +73,17 @@ function loginSubmit() {
     let six = document.getElementById('codeSix').value;
 
     const adminCode = "FD98WD"
-    const empCode = "A2JND8"
+    let empCode;
+    empCode = empCodeGenerator(result);
+    //0228: removing const empCode as now we have potential for any code for many employees
+    //0228: keep a const admin code as the admin is always expected to have access
+    //REMOVED: const empCode = "A2JND8"
 
     loginCode = one + two + three + four + five + six;
     
     if (loginCode.toUpperCase() == adminCode) {
         window.location.href = "overview.html";
-    } else if (loginCode.toUpperCase() == empCode){
+    } else if (loginCode.toUpperCase() == newEmpCode){
         window.location.href = "survey.html";
     } else {
         document.getElementById('loginGreeting').innerHTML = "Invalid Code. Try Again!";
@@ -252,12 +256,17 @@ function empCodeGenerator() {
     return result;
 }
 
+// 0228: Adding multiple employee IDs that are valid for real-world use where a company would have multiple employees
 function outputEmpCode() {
-    let validEmpId = "JB23MD";
+    let validEmpId1 = "JB23MD";
+    let validEmpId2 = "JB23MF";
+    let validEmpId3 = "JB23MG";
+    let validEmpId4 = "JB23MH";
+    let validEmpId5 = "JB23MJ";
     let newEmpCode = "";
     let employeeID = document.getElementById('empIdInput').value;
 
-    if (employeeID == validEmpId) {
+    if (employeeID == validEmpId1 || employeeID == validEmpId2 || employeeID == validEmpId3 || employeeID == validEmpId4 || employeeID == validEmpId5) {
         newEmpCode = empCodeGenerator();
         document.getElementById('codeOutput').innerHTML = newEmpCode;
         document.getElementById('codeOutput').style.fontSize = "20px";
@@ -268,6 +277,9 @@ function outputEmpCode() {
         document.getElementById('codeOutput').style.color = "red";
     }
 }
+
+
+
 
 function TestButtonHandler() {
     var parameters = '{"data":"clickSucessfull"}'
