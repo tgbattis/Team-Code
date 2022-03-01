@@ -89,12 +89,26 @@ function loginSubmit() {
     let five = document.getElementById('codeFive').value;
     let six = document.getElementById('codeSix').value;
 
+<<<<<<< HEAD
+=======
+    const adminCode = "FD98WD"
+    let empCode;
+    empCode = empCodeGenerator(result);
+    //0228: removing const empCode as now we have potential for any code for many employees
+    //0228: keep a const admin code as the admin is always expected to have access
+    //REMOVED: const empCode = "A2JND8"
+
+>>>>>>> 62c3276ee58f754ad0a3d66ea4f58430793718a8
     loginCode = one + two + three + four + five + six;
     
     if ((loginCode.toUpperCase() == validLoginCodeFive) ||  (loginCode.toUpperCase() == validLoginCodeSix)) {
         window.location.href = "overview.html";
+<<<<<<< HEAD
     } else if ((loginCode.toUpperCase() == validLoginCodeOne) ||  (loginCode.toUpperCase() == validLoginCodeTwo) ||
                (loginCode.toUpperCase() == validLoginCodeThree) ||  (loginCode.toUpperCase() == validLoginCodeFour)) {
+=======
+    } else if (loginCode.toUpperCase() == newEmpCode){
+>>>>>>> 62c3276ee58f754ad0a3d66ea4f58430793718a8
         window.location.href = "survey.html";
     } else {
         document.getElementById('loginGreeting').innerHTML = "Invalid Code. Try Again!";
@@ -269,13 +283,26 @@ function empCodeGenerator() {
     return result;
 }
 
+// 0228: Adding multiple employee IDs that are valid for real-world use where a company would have multiple employees
 function outputEmpCode() {
+<<<<<<< HEAD
     let newEmpCode = "";
     let employeeID = document.getElementById('empIdInput').value;
 
     if ((employeeID.toUpperCase() == validIDOne) ||  (employeeID.toUpperCase() == validIDTwo) ||
         (employeeID.toUpperCase() == validIDThree) ||  (employeeID.toUpperCase() == validIDFour) ||
         (employeeID.toUpperCase() == validIDFive) ||  (employeeID.toUpperCase() == validIDSix)) {
+=======
+    let validEmpId1 = "JB23MD";
+    let validEmpId2 = "JB23MF";
+    let validEmpId3 = "JB23MG";
+    let validEmpId4 = "JB23MH";
+    let validEmpId5 = "JB23MJ";
+    let newEmpCode = "";
+    let employeeID = document.getElementById('empIdInput').value;
+
+    if (employeeID == validEmpId1 || employeeID == validEmpId2 || employeeID == validEmpId3 || employeeID == validEmpId4 || employeeID == validEmpId5) {
+>>>>>>> 62c3276ee58f754ad0a3d66ea4f58430793718a8
         newEmpCode = empCodeGenerator();
         document.getElementById('codeOutput').innerHTML = newEmpCode;
         document.getElementById('codeOutput').style.fontSize = "20px";
@@ -286,6 +313,9 @@ function outputEmpCode() {
         document.getElementById('codeOutput').style.color = "red";
     }
 }
+
+
+
 
 function TestButtonHandler() {
     var parameters = '{"data":"clickSucessfull"}'
