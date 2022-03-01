@@ -49,21 +49,21 @@ let quesFifteenChart;
 // let currentQuestion;
 // let nextAnswer;
 
-let fakeData = questions[questionOne]; // 
-let fakeDataTwo = questions[questionTwo];
-let fakeDataThree = questions[questionThree];
-let fakeDataFour = questions[questionFour];
-let fakeDataFive = questions[questionFive];
-let fakeDataSix = questions[questionSix];
-let fakeDataSeven = questions[questionSeven];
-let fakeDataEight = questions[questionEight];
-let fakeDataNine = questions[questionNine];
-let fakeDataTen = questions[questionTen];
-let fakeDataEleven = questions[questionEleven];
-let fakeDataTwelve= questions[questionTwelve];
-let fakeDataThirteen = questions[questionThirteen];
-let fakeDataFourteen = questions[questionFourteen];
-let fakeDataFifteen = questions[questionFifteen];
+let fakeData = [23, 32, 82, 63, 123]; // 
+let fakeDataTwo = [32, 12, 92, 121, 84];
+let fakeDataThree = [12, 32, 76, 102, 132];
+let fakeDataFour = [32, 23, 65, 129, 98];
+let fakeDataFive = [87, 42, 29, 90, 103];
+let fakeDataSix = [67, 19, 82, 101, 132];
+let fakeDataSeven = [29, 31, 92, 92, 121];
+let fakeDataEight = [19, 21, 84, 121, 101];
+let fakeDataNine = [42, 23, 63, 78, 132];
+let fakeDataTen = [23, 10, 64, 88, 96];
+let fakeDataEleven = [8, 13, 29, 132, 167];
+let fakeDataTwelve = [19, 9, 42, 98, 156];
+let fakeDataThirteen = [23, 32, 67, 89, 132];
+let fakeDataFourteen = [43, 19, 98, 67, 101];
+let fakeDataFifteen = [21, 32, 89, 76, 142];
 
 function overviewPage() {
     currentPage = 1;
@@ -93,7 +93,7 @@ function overviewPage() {
                 labels: ['Mad', 'Sad', 'Content', 'Joyful', 'Happy'],
                 datasets: [{
                     label: 'Amount',
-                    data: fakeData,
+                    data: [1, 1, 1, 1, 1],
                     backgroundColor: [
                         '#FF0000', '#FB9494', '#FFFFFF', '#73C6FF', '#0073C2'
                     ]
