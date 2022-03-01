@@ -40,6 +40,23 @@ let nextAnswer;
 
 let loginCode;
 
+const validIDOne = "KS9US2";
+const validIDTwo = "U2JS9D";
+const validIDThree = "8DN902";
+const validIDFour = "KS820M";
+const validIDFive = "MIS89S";
+const validIDSix = "2ME8S9";
+
+const validLoginCodeOne = "4NFI92";
+const validLoginCodeTwo = "JS820M";
+const validLoginCodeThree = "K92JSM";
+const validLoginCodeFour = "UW82J2";
+const validLoginCodeFive = "NY82K1";
+const validLoginCodeSix = "1IS9M2";
+
+const validIds = [validIDOne, validIDTwo, validIDThree, validIDFour];
+const validAdminIds = [validIDFive, validIDSix];
+
 function autoTab(current, length, to) {
 	if (document.getElementById(current).value.length == length) {
 		document.getElementById(to).focus();
@@ -72,14 +89,12 @@ function loginSubmit() {
     let five = document.getElementById('codeFive').value;
     let six = document.getElementById('codeSix').value;
 
-    const adminCode = "FD98WD"
-    const empCode = "A2JND8"
-
     loginCode = one + two + three + four + five + six;
     
-    if (loginCode.toUpperCase() == adminCode) {
+    if ((loginCode.toUpperCase() == validLoginCodeFive) ||  (loginCode.toUpperCase() == validLoginCodeSix)) {
         window.location.href = "overview.html";
-    } else if (loginCode.toUpperCase() == empCode){
+    } else if ((loginCode.toUpperCase() == validLoginCodeOne) ||  (loginCode.toUpperCase() == validLoginCodeTwo) ||
+               (loginCode.toUpperCase() == validLoginCodeThree) ||  (loginCode.toUpperCase() == validLoginCodeFour)) {
         window.location.href = "survey.html";
     } else {
         document.getElementById('loginGreeting').innerHTML = "Invalid Code. Try Again!";
@@ -203,6 +218,8 @@ function submitAnswers() {
         questions[question][answer]++;  // increments answer value by 1 
         // Change increment values to all be 1
     }    
+
+    window.location.href = "./submission.html"
 }
 
 function unCheckAll(value) {
@@ -253,11 +270,12 @@ function empCodeGenerator() {
 }
 
 function outputEmpCode() {
-    let validEmpId = "JB23MD";
     let newEmpCode = "";
     let employeeID = document.getElementById('empIdInput').value;
 
-    if (employeeID == validEmpId) {
+    if ((employeeID.toUpperCase() == validIDOne) ||  (employeeID.toUpperCase() == validIDTwo) ||
+        (employeeID.toUpperCase() == validIDThree) ||  (employeeID.toUpperCase() == validIDFour) ||
+        (employeeID.toUpperCase() == validIDFive) ||  (employeeID.toUpperCase() == validIDSix)) {
         newEmpCode = empCodeGenerator();
         document.getElementById('codeOutput').innerHTML = newEmpCode;
         document.getElementById('codeOutput').style.fontSize = "20px";
